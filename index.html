@@ -6,8 +6,9 @@
     <title>IT Support Group</title>
     <link rel="stylesheet" href="./css/style.css">
 
-
+    <link rel="icon" href="">
     <link href="https://db.onlinewebfonts.com/c/13ab13418f633c1b0516fed6e30bedbc?family=Suisse+Int%27l" rel="stylesheet">
+    <link rel="stylesheet" href="./package/swiper-bundle.min.css">
 </head>
 <body>
     
@@ -76,32 +77,55 @@
         <section class="yellowPage">
             <h2>Unlimited Invoicing, Connection to Bank account, Multi-currency Accounting </h2>
             <p>Will help you make accounting even easier. Spend less time and money on boring paperwork </p>
+            <h3>Connect your bank account</h3>
             <div class="choosePhoto">
                 <div class="chooseList">
-                    <label class="checklist-item">
-                        <input type="checkbox" checked>
-                        <span class="custom-checkbox">Connect your bank account</span>
-                    </label>
-                    <label class="checklist-item">
-                        <input type="checkbox">
-                        <span class="custom-checkbox">Issue and send invoices to your clients</span>
-                    </label>
-                    <label class="checklist-item">
-                        <input type="checkbox">
-                        <span class="custom-checkbox">Upload invoices for the period</span>
-                    </label>
-                    <label class="checklist-item">
-                        <input type="checkbox">
-                        <span class="custom-checkbox"> Our accountant will create and file the report</span>
-                    </label>
+                    <ul class="custom-checkbox">
+                        <li>
+                            <input type="radio" id="option1" name="option" checked>
+                            <label for="option1">Connect your bank account</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="option2" name="option">
+                            <label for="option2">Issue and send invoices to your clients</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="option3" name="option">
+                            <label for="option3">Upload invoices for the period</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="option4" name="option">
+                            <label for="option4">Our accountant will create and file the report</label>
+                        </li>
+                    </ul>
+
                 </div>
                 <div class="chosenPhoto">
-                    <img src="./img/1.png" alt="">
-                    <!-- <img src="./img/2.png" alt="">
-                    <img src="./img/3.png" alt="">
-                    <img src="./img/4.png" alt=""> -->
+                    <img src="./img/1.png" id="mainImage" alt="">
                 </div>
             </div>
+                
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/current 1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/2.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/3.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/4.png" />
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+
         </section>
 
 
@@ -109,6 +133,7 @@
             <h2>We’ll help you choose
                 the package that suits exactly what you need                
             </h2>
+            
             <div class="saleBtns">
                 <button class="infoBtns">I have VAT Number</button>
                 <button class="infoBtns">No VAT Number</button>
@@ -122,18 +147,49 @@
 
             <div class="costCards">
                 <div class="card">
-                    <h3>Standard</h3>
-                    <h3><b>€42 / month</b></h3>
-                    <p>Covers the necessary accounting needs. Choose it if you don’t have VAT number and your workflow is small.</p>
-                    <div class="addInfo">
-                        <input type="checkbox" id ="hd1 "class = "infoText">
-                        <label for="hd1">Documents yearly</label>
-                        <input type="checkbox" id = 'hd2' class="infoText">
-                        <label for="hd2">Annual report</label>
-                        <div>Accountant will help you structure accounting for your specific case. Extra consultations with accountant 
-                            are always available separately.</div>
+                    <div class="cardText">
+                        <h3>Standard</h3>
+                        <h3><b>€42 / month</b></h3>     
                     </div>
-                    <button class="purple">Choose Plan</button>
+                        <p>Covers the necessary accounting needs. Choose it if you don’t have VAT number and your workflow is small.</p>
+                       
+                    <div class="documents-yearly">
+                        <p>Documents yearly <span class="info-icon"><img src="./img/questionmark.png" alt=""></span></p>
+                        <div class="toggle-buttons">
+                            <button class="toggle active">30</button>
+                            <button class="toggle">50</button>
+                        </div>
+                    </div>
+                    <div class="services-list">
+                        <div class="service-item">
+                          <p>Annual report</p>
+                          <span class="toggle-plus">+</span>
+                          <div class="service-details">Detailed description of annual report service.</div>
+                        </div>
+                        <div class="service-item">
+                          <p>VAT Return</p>
+                          <span class="toggle-plus">+</span>
+                          <div class="service-details">Information about VAT Return service.</div>
+                        </div>
+                        <div class="service-item">
+                          <p>1 TSD each month</p>
+                          <span class="toggle-plus">+</span>
+                          <div class="service-details">Details of 1 TSD service provided monthly.</div>
+                        </div>
+                        <div class="service-item">
+                          <p>1-hour consultation with accountant per year</p>
+                          <span class="toggle-plus">+</span>
+                          <div class="service-details">More info on consultation service.</div>
+                        </div>
+                        <div class="service-item">
+                          <p>5 more company management services</p>
+                          <span class="toggle-plus">+</span>
+                          <div class="service-details">Details of additional management services.</div>
+                        </div>
+                      </div>
+                    
+                      <button class="black">Choose Plan</button>
+                    </div>
                 </div>
             </div>
 
@@ -144,5 +200,31 @@
 
 
     <script src="./js/script.js"></script>
+    <script src="./package/swiper-bundle.min.js"></script>
+    <script>
+        // const swiper = new Swiper('.swiper', {
+        //         loop: true,
+
+        //                     navigation: {
+        //         nextEl: '.swiper-button-next',
+        //         prevEl: '.swiper-button-prev',
+        //     },
+
+        //         })
+
+        var swiper = new Swiper(".mySwiper", {
+      effect: "flip",
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+    </script>
 </body>
 </html>

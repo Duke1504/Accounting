@@ -256,6 +256,17 @@ body {
 
 }
 
+.yellowPage h3 {
+    display: none;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 133%;
+    text-align: center;
+    padding: 56px 28px  15px 23px;
+    color:#000000;
+
+}
+
 .choosePhoto {
     display: flex;
     margin-top: 107px;
@@ -275,37 +286,90 @@ body {
     color:#1B1A1A;
 }
 
+.swiper {
+    display: none;
+
+}
+
+.swiper img {
+    width: 295px;
+    height: 229px;
+    padding: 15px 24px 119px 24px;
+}
+
+
+
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 32px;
+}
+
+input[type="radio"] {
+    transform: scale(3);
+    margin-right: 20px;
+    
+}
+
 .chosenPhoto img {
-    width: 732px;
-    height: 619px;
+    width: calc(41vw + 141px);
+    height: calc(36.6vw + 91px);
+
+}
+
+.custom-checkbox li {
+    display: flex;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 125%;
+    color:#000000;
 
 }
 
 .SaleContainer {
-    width: 1441px;
-    height: 2134px;
+    width: calc(100vw - 0.35px);
+    height: calc(52.6vw + 1376px);
     background: #E8E8E8;
     margin-top: 180px;
-    border-radius: 100px;
+    border-radius: calc(6.4vw + 8px);
 }
 
 .SaleContainer h2 {
-    font-size: 80px;
+    font-size: calc(4.5vw +  15px);
     font-weight: 400;
     line-height: 110%;
     text-align: center;
     color: #000000;
-    padding: 135px 84px 0 84px;
+    padding: calc(7.4vw + 28px) calc(5.6vw + 2.9px) 0 calc(5.6vw + 2.9px);
 
 }
 
+.saleBtns {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 48px 157px 0 157px;
+    color: #ffff;
+    gap: 9px 24px;
+    
+}
+
 .infoBtns {
-    width: 274.75px;
+    width: 274px;
     height: 80px;
     padding: 16px 44px 16px 44px;
     gap: 10px;
     border-radius: 80px;
 
+
+}
+
+.costCards {
+    display: flex;
+    gap: 0 25px;
+    margin: 64px 84px;
 }
 
 .discount {
@@ -321,10 +385,112 @@ body {
     height: 703px;
     border-radius: 32px;
     border: 8px;
-    background-color: #ffff;
+    background: #ffff;
     color: #000000;
+
 }
 
+.cardText {
+    padding: 40px 121px 0 40px;
+
+}
+
+.card h3 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 120%;
+
+}
+
+.card p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #000000A3;
+    padding: 16px 44px 0 40px;
+
+}
+
+
+.card button {
+    margin: 91px 40px 40px 40px;
+}
+
+
+.black {
+    width: calc(4.6vw + 261px);
+    height: calc(2.4vw + 46.8px);
+    font-size: calc(0.6vw + 15.8px);
+    border: none;
+    border-radius: 20px;
+    background-color: #000000;
+    color: white; 
+  
+}
+
+
+.documents-yearly {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .toggle-buttons {
+    display: flex;
+  }
+
+  .toggle {
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .toggle.active {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .services-list {
+    text-align: left;
+  }
+  
+  .service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .service-item:last-child {
+    border-bottom: none;
+  }
+  
+  .toggle-plus {
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .service-details {
+    display: none;
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .choose-plan {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
 
 
 
@@ -361,5 +527,20 @@ body {
         display: none;
     }
 
-    
+    .chooseList {
+        display: none;
+    }
+
+    .yellowPage h3 {
+        display: block;
+    }
+
+    .choosePhoto {
+        display: none;
+    }
+
+    .swiper {
+        display: block;
+
+    }
 }
