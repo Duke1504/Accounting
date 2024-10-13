@@ -16,3 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+function toggleAnswer(button) {
+    const faqItem = button.parentElement;
+    faqItem.classList.toggle('active');
+    const span = button.querySelector('span');
+    span.textContent = faqItem.classList.contains('active') ? '-' : '+';
+}
