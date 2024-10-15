@@ -809,26 +809,26 @@ input[type="radio"] {
 
 
 .lastPage {
-    width: 1260px;
-    height: 606px;
+    width: calc(86vw +20px);
+    height: calc(18.6vw + 338px);
     border-radius: 48px;
-    margin: 180px 88px 160px 92px;
+    margin: calc(5.6vw + 99px) calc(6.8vw - 9.3px) 0 calc(7.1vw - 10px);
     background: linear-gradient(131.12deg, #FF559C 3.08%, #FD57F4 22%, #AD59FA 40.93%, #5A5BF8 59.85%, #5CAEF5 78.77%, #5EF3EA 97.7%);
 
 
 }
 
 .lastPage h2 {
-    font-size: 80px;
+    font-size: calc(3.8vw + 26px);
     font-weight: 400;
     line-height:110%;
     text-align: center;
-    padding: 137px 237px 40px 238px;
+    padding: calc(5vw + 65px) calc(20vw - 51px) calc(1.5vw + 18px) calc(20vw - 51px);
 
 }
-
+    
 .lastPage button {
-    margin: 0 423px 137px 452px;
+    margin: 0 calc(37.5vw - 116px) calc(40.2vw - 126px) calc(40.2vw - 126px);
 }
 
 .questions h2 {
