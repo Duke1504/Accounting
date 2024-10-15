@@ -363,13 +363,31 @@ input[type="radio"] {
 
 }
 
-.discount {
+.billBtns {
+    background-color: #fff;
     width: 1126px;
     height: 80px;
     border-radius: 80px;
-
-
+    display: flex;
+    justify-content: space-between;
 }
+
+.discountp {
+    background-color: #fff;
+    width: 565px;
+    height: 80px;
+    border: none;
+    border-radius: 80px;
+}
+
+.discountw {
+    background-color:   purple;
+    width: 565px;
+    height: 80px;
+    border: none;
+    border-radius: 80px;
+}
+
 
 .costCards {
     display: flex;
@@ -928,7 +946,6 @@ button.faqText .plus {
 
 
 }
-
 
 
 
