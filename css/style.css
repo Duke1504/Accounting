@@ -617,25 +617,26 @@ input[type="radio"] {
     font-weight: 400;
     line-height: 110%;
     text-align: center;
-    margin: 0 calc(6vw + 1.4px);
+    margin: 0 calc(6.4vw + 0.056px);
 
 }
 
 .stats {
-    display: flex;
-    margin: 32px 129px 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: calc(1.4vw + 11.7px) calc(9.9vw - 12.9px) 40px;
     color: #FFFFFFA3;
+    gap: 8px 4px;
 }
 
 .stat {
-    width: 292.5px;
-    height: 149px;
-    padding: 8px 41.5px 29px 40px;
+    width: calc(12.5vw + 112.6px);
+    height: calc(4.6vw + 82.7px);
 
 }
 
 .stats h4 {
-    font-size: 80px;
+    font-size: calc(3.8vw + 26px);
     font-weight: 600;
     line-height: 110%;
     text-align: center;
@@ -643,35 +644,43 @@ input[type="radio"] {
 }
 
 .stats span {
-    font-size: 16px;
+    font-size: calc(0.2vw + 13.2px);
     font-weight: 400;
     line-height: 150%;
     text-align: center;
 
 }
 
+#five {
+    padding: 0 calc(1.2vw + 39.5px);
+}
+
+#eight {
+    padding: calc(2.3vw + 21.5px);
+}
+
 .partners {
     display: flex;
-    justify-content: space-around;
+}
+
+
+
+.partners span {
+    width: 105px;
+    padding: 18px 0 18px 23px;
 }
 
 #trusted {
-    width: 82px;
-    height: 108px;
+    width: calc(3.8vw + 27.9px);
+    height: calc(4.9vw + 37.6px);
 }
 
 #mask {
-    width: 120.62px;
-    height: 79.47px;
-    padding: 7px 0 35px 32px;
+    width: calc(5.1vw + 47px);
+    height: auto
 
 }
 
-.partners span {
-    padding: 18px 0 18px 23px;
-    width: 105px;
-    height: 72px;
-}
 
 .review {
     display: flex;
@@ -684,6 +693,7 @@ input[type="radio"] {
     height: calc(2vw + 410px);
     background: #FFFFFF1A;
     border-radius: 40px;
+
 
 }
 
@@ -846,7 +856,8 @@ input[type="radio"] {
 }
     
 .lastPage button {
-    margin: 0 calc(37.5vw - 116px) calc(40.2vw - 126px) calc(40.2vw - 126px);
+    margin: 0 calc(37.5vw - 116px) calc(5vw - 65px) calc(37.7vw - 91.5px);
+
 }
 
 .questions h2 {
@@ -1010,4 +1021,20 @@ button.faqText .plus {
     .review {
         display: none;
     }
+
+    .reviewCard {
+        margin: 0 24px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .partners {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        text-align: center;
+    }
+
 }
