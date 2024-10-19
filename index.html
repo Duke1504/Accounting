@@ -498,16 +498,40 @@
 <section class="additionalInfo">
     <h2>Read more about accounting and related products</h2>
 
-    <div class="arcticles">
-        <img src="./img/vat.png" alt="">
-        <img src="./img/id.png" alt="">
-        <img src="./img/invoice.png" alt="">
-        <img src="./img/jurisdiction.png" alt="">
+    <div class="dekstop">
+        <div class="arcticles">
+            <img src="./img/vat.png" alt="">
+            <img src="./img/id.png" alt="">
+            <img src="./img/invoice.png" alt="">
+            <img src="./img/jurisdiction.png" alt="">
+        </div>
     </div>
+
+    <div class="mobileadaptiv">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/vat.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/id.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/invoice.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/jurisdiction.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+    </div>
+
+
     <h3>Don’t miss our product updates by subscribing to our newsletter</h3>
-    <div class="subscription-box">
-        <input type="email" placeholder="your email" required>
-        <button type="submit">Subscribe</button>
+    <div class="subscribe-container">
+        <input type="email" placeholder="your email">
+        <button>subscribe</button>
     </div>
 
 
@@ -520,6 +544,53 @@
         <button class="purple">Let’s start</button>
     </section>
 
+
+    <section class="contacts">
+        <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="./img/logo.ico.png"></img>
+                </div>
+              
+              <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                  <li><a href="#">Incorporation EU</a></li>
+                  <li><a href="#">Incorporation Estonia</a></li>
+                </ul>
+              </div>
+              
+              <div class="footer-column">
+                <h3>Legal Info</h3>
+                <ul>
+                  <li><a href="#">Cookies Notice</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms</a></li>
+                </ul>
+              </div>
+              
+              <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="mailto:support@enty.io">support@enty.io</a></li>
+                  <li><a href="tel:+79261581153">+7 926 158-11-53</a></li>
+                </ul>
+              </div>
+              
+              <div class="footer-info">
+                <address>
+                  14772217<br>
+                  Tornimäe tn 5,<br>
+                  10145, Tallinn, Harju maakond<br>
+                  Register №160800939<br>
+                  <br>
+                  Developed with ❤️ by Entytech OÜ and Digirepresent Services OÜ<br>
+                  (license № FIU000382)
+                </address>
+                <p>We accept <img src="./img/Visa_Inc._logo 1.png" alt="Visa" width="40"> <img src="./img/mastercard.png" alt="Mastercard" width="40"></p>
+              </div>
+            </div>
+    </section>
 
 
 
@@ -542,6 +613,10 @@
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+      },
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
       },
     });
   </script>

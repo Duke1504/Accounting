@@ -783,11 +783,11 @@ input[type="radio"] {
   }
 
   .additionalInfo h2 {
-    font-size: 80px;
+    font-size: calc(3.8vw + 26px);
     font-weight: 400;
     line-height: 110%;
     text-align: center;
-    margin: 180px 62px 68px 92px;
+    margin: calc(5.6vw + 98.8px) calc(3.6vw + 10px) calc(5.4vw + 15px) calc(4.1vw + 8.5px);
 
   }
 
@@ -799,42 +799,56 @@ input[type="radio"] {
     gap: 32px;
   }
 
+.mobileadaptiv {
+    display: none;
+}
+
   .additionalInfo h3 {
-    font-size: 40px;
+    font-size: calc(1.5vw + 18.3px);
     font-weight: 400;
     line-height: 120%;
     text-align: center;
-    margin: 68px 420px 32px;
+    margin: 0 calc(36vw - 99px) calc(0.8vw + 21px);
 
   }
 
-.subscription-box {
-    text-align: center;
+  .subscribe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    
 }
 
-.subscription-box input[type="email"] {
+.subscribe-container input[type="email"] {
     padding: 10px;
-    width: 250px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 10px;
+    font-size: 16px;
+    border-radius: 24px;
     outline: none;
+    background-color: #1B1A1A;
+    border: 2px solid #999;
+    color: white;
 }
 
-.subscription-box button {
-    padding: 10px 20px;
-    border: none;
-    background-color: white;
+.subscribe-container input::placeholder {
+    color: white;
+}
+
+.subscribe-container button {
     color: black;
-    font-weight: bold;
-    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #fff;
+    border-left: none;
+    border-radius: 24px;
     cursor: pointer;
+    border: 2px solid #999;
 }
 
-.subscription-box button:hover {
-    background-color: #ddd;
+.subscribe-container button:hover {
+    background-color: #f0f0f0;
 }
-
 
 .lastPage {
     width: calc(86vw +20px);
@@ -861,23 +875,22 @@ input[type="radio"] {
 }
 
 .questions h2 {
-    font-size: 80px;
+    font-size: calc(3.8vw + 26px);
     font-weight: 400;
     line-height: 110%;
     text-align: center;
-    margin: 290px 117px 45px;
+    margin: calc(16vw + 60px) calc(8.7vw - 8.7px) calc(1.2vw + 27.5px);
 
 }
 
 .faq {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    width: 1262px;
+    width: calc(87.8vw - 2.2px);
     background-color: #333;
     border-radius: 40px;
-    margin: 0 89px;
-    padding: 20px;
+    margin: 0 calc(6.1vw + 1.1px);
+
 }
 
 .faq-item {
@@ -886,9 +899,10 @@ input[type="radio"] {
 }
 
 button.faqText {
-    font-size: 32px !important;
+    font-size: calc(1.1vw + 15.7px) !important;
     font-weight: 600;
     line-height: 125%;
+    padding: calc(1.5vw + 18.3px);
 
 }
 
@@ -899,7 +913,7 @@ button.faqText .plus {
 
 
 .answer p {
-    font-size: 24px;
+    font-size: calc(1.1vw + 7.7px);
     font-weight: 400;
     line-height: 133%;
     color: #FFFFFFA3;
@@ -936,27 +950,96 @@ button.faqText .plus {
 
 
 .direct-contact {
-    width: 1262px;
-    height: 110px;
+    width: calc(87.8vw - 2.225px);
+    height: calc(0.6vw + 101px);
 
     background-color: white;
     border-radius: 40px;
     padding: 15px;
     text-align: center;
-    margin: 24px 88px;
+    margin: 24px calc(6vw + 1.4px);
 }
 
 .direct-contact p {
-    font-size: 32px;
+    font-size: calc(1.1vw + 15.7px);
     font-weight: 600;
     line-height: 125%;
     text-align: center;
-    padding: 40px;
+    padding: calc(1.5vw + 18.3px);
     color:#000000;
 
 
 
 }
+
+.contacts {
+    color: #ddd;
+    padding: 20px 0;
+    margin-top: 160px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 0 42px;
+  }
+  
+  .footer-logo {
+    padding-right: 280px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    gap: 10px 0;
+
+  }
+  
+  .footer-column h3 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 140%;
+
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 5px;
+
+  }
+  
+  .footer-column ul li a {
+    color: #999;
+    text-decoration: none;
+  }
+  
+  .footer-column ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-info {
+    color: #999;
+    flex: 2;
+    text-align: right;
+    font-size: 14px;
+  }
+  
+  .footer-info address {
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .footer-info img {
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+  
+
 
 
 
@@ -1030,11 +1113,32 @@ button.faqText .plus {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .partners {
-        display: flex;
-        flex-direction: column; 
-        align-items: center;    
-        text-align: center;
+    .dekstop {
+        display: none;
     }
 
+    .mobileadaptiv {
+        display: block;
+
+    }
+
+    .mobileadaptiv img {
+        width: 92%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .footer-info {
+        margin-top: 20px;
+        text-align: center;
+    }
 }
